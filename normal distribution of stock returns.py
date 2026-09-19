@@ -4,7 +4,7 @@ import numpy as np
 from scipy import stats
 
 #Download stock price
-data = yf.download("TCS.NS", period="1y")
+data = yf.download("AAPL", period="1y")
 
 #Calculate daily returns
 returns = data["Close"].pct_change().dropna()
